@@ -1,0 +1,207 @@
+/* || RESET */
+
+*, *::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color-scheme: light dark;
+}
+
+img, svg, picture, video{
+    display: block;
+    min-width: 100%;
+}
+
+input, textarea, select, button{
+    font-size: inherit;
+}
+
+/* || VARIABLES */
+
+:root{
+    /* || COLORS */
+    --TXTCOLOR-DEFAUL: black;
+    --TXTCOLOR: whitesmoke;
+    --BOXSHADOW-COLOR: black;
+
+
+
+    /* || BORDERS */
+    --BORDER-RADIUS: 15px;
+    --BOXSHADOW:3px 3px 15px 20px var(--BOXSHADOW-COLOR);
+
+    /* || VARIABLES */
+}
+
+/* || GENERAL STYLES */
+
+body{
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--TXTCOLOR);
+}
+
+header{
+    background-color: var(--TXTCOLOR);
+    padding: 0 0.5em;
+    color: var(--TXTCOLOR-DEFAUL);
+}
+
+h1{
+    color: red;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2{
+    text-align: center;
+    padding: 1em;
+    color: var(--TXTCOLOR);
+    text-shadow: 2px 2px var(--TXTCOLOR-DEFAUL);
+}
+
+h3{
+   text-align: center;
+   font-style: italic;
+}
+
+main{
+   padding: 0 0.5em;
+   background-color: whitesmoke;
+   color: var(--TXTCOLOR-DEFAUL);
+}
+
+
+/* || ELEMENTS STYLES */
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 0 0;
+    flex-wrap: wrap;
+}
+
+li > a{
+    margin:0.7em;
+    text-decoration: none;
+    color: var(--TXTCOLOR);
+    font-weight: bold;
+}
+
+.header{
+    background-color: gray;
+    border-radius: var(--BORDER-RADIUS);
+}
+
+.image-logo{
+    border:2px solid black;
+    border-radius: var(--BORDER-RADIUS);
+    margin:0.1em auto;
+    min-width: 100px;
+}
+
+
+.start_menu{
+    min-height: 660px;
+    background-image: url("../img/food.jpeg");
+    border-radius: var(--BORDER-RADIUS);
+    margin-bottom: 1em;
+}
+
+.order{
+    display: block;
+    text-align: center;
+}
+
+.order a{
+    background-color: yellow;
+    border-radius: var(--BORDER-RADIUS);
+    text-decoration: none;
+    color: var(--TXTCOLOR-DEFAUL);
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+div[class^='container-']{
+    height: 200px;
+    width: 400px;
+    box-shadow: var(--BOXSHADOW);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5em;
+}
+
+.container-prices{
+    background-image: url("../img/chef.jpg");
+    background-position:center top;
+}
+.container-specials{
+    background-image: url("../img/pizza.jpg");
+    background-position: center;
+}
+
+.imgs-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 0.5em;
+}
+
+.block-img img{
+    max-width: 300px;
+    height: 300px;
+    border-radius: var(--BORDER-RADIUS);
+}
+
+a:hover, a:active{
+    color:red;
+}
+
+@media screen and (max-width: 420px ) {
+    body{
+        font-size: 1.5rem;
+    }
+
+    li > a{
+        gap: 5px;
+        margin: 0.3em;
+    }
+
+    div[class^='container-']{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+
+@media screen and (max-width: 1030px ) {
+
+    .block-img img{
+        max-width: 400px;
+        height: 400px;
+        border-radius: 15px;
+    }
+
+    .block-img:last-child{
+        flex-grow: 1;
+        margin: 0 2em;
+    }
+
+
+}

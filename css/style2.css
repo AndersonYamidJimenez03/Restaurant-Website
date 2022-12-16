@@ -1,0 +1,58 @@
+/* || RESET */
+
+*, *::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color-scheme: light dark;
+}
+
+img, svg, picture, video{
+    display: block;
+    max-width: 100%;
+}
+
+input, textarea, select, button, label, p{
+    font-size: inherit;
+    margin: 0.5em;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+
+
+/*|| GENERAL STYLE */
+
+body{
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 40%;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+h1{
+    text-align: center;
+}
+
+div[class^='container'] > *{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+input[type=radio]{
+    transform: scale(200%);
+}
+
+button{
+    padding: 10px;
+    border: 2px dotted whitesmoke;
+    border-radius: 10px;
+}

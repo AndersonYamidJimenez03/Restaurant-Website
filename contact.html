@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <meta name="author" content="Anderson Jimenez">
+    <meta name="description" content="This is the contact page of the FoodShop">
+    <link rel="stylesheet" href="css/style2.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <form action="" method="get">
+            <div class="container-selector">
+                <label for="type">Type of Query</label>
+                <select name="type" id="type">
+                    <option value="" disabled selected>Select your query type</option>
+                    <option value="information">Information</option>
+                    <option value="complain">Complain</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="container-name">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"
+                placeholder="Enter your name">
+            </div>
+            <div class="container-email">
+                <label for="email">Email-Id</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="container-phone">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone no">
+            </div>
+            <p>
+                Are you member of onlineFoodShop
+                <span class="nowrap">
+                <label for="yes">Yes <input type="radio" id="yes" name="radios"></label><label for="no">No <input type="radio" id="no" name="radios"></label>
+                </span>
+            </p>
+            <div class="container-txtarea">
+                <label for="txtarea">Elaborate your Query</label>
+                <textarea name="" id="txtarea" cols="30" rows="10"></textarea>
+            </div>
+            <div class="btns">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
